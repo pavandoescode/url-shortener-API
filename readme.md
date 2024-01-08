@@ -1,4 +1,4 @@
-# URL Shortening Service API Documentation
+# URL Shortener API Documentation
 
 ## Base URL
 - Base URL: `http://yourdomain.com`
