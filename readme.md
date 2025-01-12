@@ -13,8 +13,8 @@
     ```json
     {
       "url": "https://www.example.com",
-      "alias": "customAlias", // Optional
-      "expirationDate": "2024-12-31" // Optional
+      "alias": "customAlias", // Optional Data
+      "expirationDate": "2024-12-31" // Optional Data
     }
     ```
 - **Response:**
