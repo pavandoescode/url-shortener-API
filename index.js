@@ -30,11 +30,7 @@ const validateAlias = async (req, res, next) => {
 };
 
 
-app.post("/", [
-  body('url').isURL().withMessage('Must be a valid URL'),
-  validateAlias,
-  validateURL,
-], async function handleGenerateNewShortURL(req, res) {
+app.post("/", [body('url').isURL().withMessage('Must be a valid URL'), validateAlias, validateURL,], async function handleGenerateNewShortURL(req, res) {
   const { url, alias, expirationDate } = req.body;
 
   const shortID = new ShortUniqueId();
@@ -54,6 +50,9 @@ app.post("/", [
   }
 });
 
+app.get("/",(req,res)=>{
+  res.send("Hello World!")
+})
 
 
 app.get("/analytics/:shortId", async function handleGetAnalytics(req, res) {
